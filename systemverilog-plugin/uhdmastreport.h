@@ -2,6 +2,10 @@
 #define _UHDM_AST_REPORT_H_ 1
 
 #include "kernel/yosys.h"
+#ifdef _WIN32
+#undef interface
+#undef ERROR
+#endif
 #include <map>
 #include <string>
 #include <unordered_map>

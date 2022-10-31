@@ -20,6 +20,10 @@
 #include "UhdmAst.h"
 #include "frontends/ast/ast.h"
 #include "kernel/yosys.h"
+#ifdef _WIN32
+#undef interface
+#undef ERROR
+#endif
 #include "uhdm/SynthSubset.h"
 #include "uhdm/VpiListener.h"
 #include <string>
